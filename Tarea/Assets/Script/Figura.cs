@@ -6,7 +6,8 @@ using UnityEngine;
 
 public abstract class Figura : MonoBehaviour
 {
-    protected Button boton;
+    [SerializeField]
+    private Button boton;
 
     private Action<float> regresar;
     private void Start()
