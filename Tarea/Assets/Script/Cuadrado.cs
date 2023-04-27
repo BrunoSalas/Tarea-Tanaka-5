@@ -12,6 +12,7 @@ public class Cuadrado : Figura
     {
 
         float l = float.Parse(cuadradoLEntrada.text);
+        Debug.Log(l * l);
         return l * l;
 
     }

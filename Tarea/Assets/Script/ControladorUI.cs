@@ -19,7 +19,7 @@ public class ControladorUI : MonoBehaviour
         foreach (var figura in controladoresFiguras)
         {
 
-            figura.Init();
+            figura.Init(Resultado);
 
         }
 
