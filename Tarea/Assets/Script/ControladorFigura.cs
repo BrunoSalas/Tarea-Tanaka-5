@@ -11,10 +11,19 @@ public class ControladorFigura
     private GameObject contenedorFigura;
     [SerializeField]
     private Button boton;
-    
+    private bool panelAbierto = false;
     private void MostrarPanel()
     {
-        contenedorFigura.SetActive(true);
+        if (!panelAbierto)
+        {
+            contenedorFigura.SetActive(true);
+            panelAbierto = true;
+        }
+        else
+        {
+            contenedorFigura.SetActive(false);
+            panelAbierto = false;
+        }
     }
 
     public void Init(Action<float> callback)
